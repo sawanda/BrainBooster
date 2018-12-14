@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -32,13 +33,9 @@ public class NamingLogic : MonoBehaviour
         SceneManager.LoadScene(nextSceneRemember);
     }
 
-    const string keyNames = "names";
-    const string keyActiveName = "activeName";
-
     private bool CheckDuplicateName(string name)
     {
-        string allNames = PlayerPrefs.GetString(keyNames, "");
-        string[] allNamesArray = allNames.Split(',');
+        string[] allNamesArray = PlayerPrefManager.AllPlayerNames();
         if (allNamesArray.Contains(name))
         {
             return true;
@@ -49,12 +46,29 @@ public class NamingLogic : MonoBehaviour
         }
     }
 
-    private void RegisterName(string newName)
+    [MenuItem("BrainBooster/Reset Everything")]
+    public static void Reset()
     {
-        string allNames = PlayerPrefs.GetString(keyNames, "");
-        allNames = allNames + "," + newName;
-        PlayerPrefs.SetString(keyNames, allNames);
+        PlayerPrefs.DeleteAll();
     }
 
-    private void SetNameAsActive(string nameToActive) => PlayerPrefs.SetString(keyActiveName, nameToActive);
+    private void RegisterName(string newName)
+    {
+        string[] allNames = PlayerPrefManager.AllPlayerNames();
+        // [AAA BBB CCC]
+        if (allNames.Length == 1 && allNames[0] == "") 
+        {
+            PlayerPrefs.SetString(PlayerPrefManager.keyNames, newName);
+        }
+        else
+        {
+            var allNamesAddedNewName = allNames.Concat(new string[] { newName });
+            string prepareToSaveBack = string.Join(",", allNamesAddedNewName);
+            //"AAA,BBB,CCC,DDD"
+            PlayerPrefs.SetString(PlayerPrefManager.keyNames, prepareToSaveBack);
+        }
+    }
+
+    private void SetNameAsActive(string nameToActive) 
+        => PlayerPrefs.SetString(PlayerPrefManager.keyActiveName, nameToActive);
 }

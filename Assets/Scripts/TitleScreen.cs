@@ -5,10 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-    const string titleSceneName = "Title";
+    public const string titleSceneName = "Title";
     const string gameSelectSceneName = "GameSelect";
     public void PushButton()
     {
-        NamingLogic.GoToNaming(nextScene: gameSelectSceneName, backScene: titleSceneName);
+        if (PlayerPrefs.GetString(PlayerPrefManager.keyActiveName, "") == "")
+        {
+            NamingLogic.GoToNaming(nextScene: gameSelectSceneName, backScene: titleSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene(gameSelectSceneName);
+        }
     }
 }
