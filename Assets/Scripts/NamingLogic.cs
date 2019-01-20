@@ -20,8 +20,7 @@ public class NamingLogic : MonoBehaviour
     }
 #endif
 
-
-    [SerializeField] private TMP_InputField namingBox;
+    public TMP_InputField namingBox;
 
     const string namingScene = "Naming";
 

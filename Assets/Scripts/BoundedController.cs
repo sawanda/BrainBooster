@@ -29,11 +29,11 @@ public class BoundedController : MonoBehaviour
     {
         if(!preventClick)
         {
-            Debug.Log(nameof(Clicked));
+            //Debug.Log(nameof(Clicked));
             PointerEventData ped = (PointerEventData)baseEventData;
             List<RaycastResult> result = new List<RaycastResult>();
             trainRaycaster.Raycast(ped, result);
-            Debug.Log($"Hitted {result.Count}");
+            //Debug.Log($"Hitted {result.Count}");
             if(result.Count > 0)
             {
                 RaycastResult firstHit = result[0];

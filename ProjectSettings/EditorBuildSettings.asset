@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Learn.unity
     guid: bf1a169973adc479db0d99765297f4da
+  - enabled: 1
+    path: Assets/Scenes/Game1.unity
+    guid: 6385c91a56a914b50a05668d60a67362
+  - enabled: 1
+    path: Assets/Scenes/Game2.unity
+    guid: c0bb75232376c41ab8186bb08c602e9b
+  - enabled: 1
+    path: Assets/Scenes/Game3.unity
+    guid: bc2dbac42025c49dfbee417f110084d4
+  - enabled: 1
+    path: Assets/Scenes/Game4.unity
+    guid: f93c67b983a7f4be2b61155f845a9d1c
   m_configObjects: {}

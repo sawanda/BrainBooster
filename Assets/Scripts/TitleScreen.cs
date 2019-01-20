@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class TitleScreen : MonoBehaviour
 {
     public const string titleSceneName = "Title";
-    const string gameSelectSceneName = "GameSelect";
+    public const string gameSelectSceneName = "GameSelect";
+
     public void PushButton()
     {
         if (PlayerPrefs.GetString(PlayerPrefManager.keyActiveName, "") == "")

@@ -599,7 +599,7 @@ MonoBehaviour:
   preventClick: 0
   leftBound: {fileID: 709413940}
   rightBound: {fileID: 1944582580}
-  trainRaycaster: {fileID: 0}
+  trainRaycaster: {fileID: 519420030}
 --- !u!1 &599590731
 GameObject:
   m_ObjectHideFlags: 0
