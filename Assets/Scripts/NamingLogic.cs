@@ -2,12 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 public class NamingLogic : MonoBehaviour
 {
+
+#if UNITY_EDITOR
+    [MenuItem("BrainBooster/Reset Everything")]
+    public static void Reset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
+#endif
+
+
     [SerializeField] private TMP_InputField namingBox;
 
     const string namingScene = "Naming";
@@ -44,12 +57,6 @@ public class NamingLogic : MonoBehaviour
         {
             return false;
         }
-    }
-
-    [MenuItem("BrainBooster/Reset Everything")]
-    public static void Reset()
-    {
-        PlayerPrefs.DeleteAll();
     }
 
     private void RegisterName(string newName)
