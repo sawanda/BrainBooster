@@ -52,7 +52,7 @@ public class Game1Logic : MonoBehaviour
 
     void Update()
     {
-        if(currentStage == PlayStage.Stage3)
+        if(currentStage == PlayStage.Stage3 || currentStage == PlayStage.Stage2)
         {
             SetDotAndNumber(currentProblem);
         }
@@ -84,9 +84,9 @@ public class Game1Logic : MonoBehaviour
         switch (currentStage)
         {
             case PlayStage.Stage1:
-            case PlayStage.Stage2:
                 SetDotAndNumber(fingerCount);
                 break;
+            case PlayStage.Stage2:
             case PlayStage.Stage3:
                 CheckAndChangeProblem(fingerCount);
                 break;
@@ -121,9 +121,22 @@ public class Game1Logic : MonoBehaviour
         raycaster.enabled = true;
     }
 
+    IEnumerator currentSoundRoutine;
     public void PlayNumberSound(int number)
     {
         if(number >= numberSounds.Length) return;
+
+        if(currentSoundRoutine != null)
+        {
+            StopCoroutine(currentSoundRoutine);
+        }
+        currentSoundRoutine = DebounceSoundRoutine(number);
+        StartCoroutine(currentSoundRoutine);
+    }
+
+    IEnumerator DebounceSoundRoutine(int number)
+    {
+        yield return new WaitForSeconds(0.05f);
         numberSoundSource.PlayOneShot(numberSounds[number]);
     }
 
