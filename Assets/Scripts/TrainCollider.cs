@@ -23,7 +23,7 @@ public class TrainCollider : MonoBehaviour
 
     public void StartGame3()
     {
-        SceneManager.LoadScene(Game3);
+        SceneManager.LoadScene(Game2);
     }
 
     public void StartGame4()

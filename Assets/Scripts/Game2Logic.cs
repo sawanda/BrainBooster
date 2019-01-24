@@ -25,6 +25,8 @@ public class Game2Logic : MonoBehaviour
 
     IEnumerator TutorialRoutine()
     {
+        yield return new WaitForSeconds(3);
+
         raycaster.enabled = false;
         tutorialDirector.Play();
         yield return new WaitForSeconds((float)tutorialDirector.playableAsset.duration);
@@ -32,7 +34,6 @@ public class Game2Logic : MonoBehaviour
         tutorialDirector.Stop();
 
         mixingBucket.Reset();
-
     }
 
     public void Dragging(BaseEventData bed)
