@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.30800655, b: 0.24056602, a: 0.5882353}
+  m_Color: {r: 1, g: 0.30800655, b: 0.24056602, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -821,8 +821,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072618012}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.9, y: -3.3, z: 0}
-  m_LocalScale: {x: 2.48, y: 1, z: 1}
+  m_LocalPosition: {x: 15.73, y: -3.3, z: 0}
+  m_LocalScale: {x: 1.4383999, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1735564842}
   m_RootOrder: 1
@@ -1191,7 +1191,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469347032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34, y: 7.6, z: 0}
+  m_LocalPosition: {x: -3.1, y: 9.1, z: 0}
   m_LocalScale: {x: 2.21, y: 1.110525, z: 2.21}
   m_Children: []
   m_Father: {fileID: 1735564842}
@@ -1405,7 +1405,7 @@ PrefabInstance:
     - target: {fileID: 5016715000807717348, guid: 4054bbe6fe4cf453d890a39133380d5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.84
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 5016715000807717348, guid: 4054bbe6fe4cf453d890a39133380d5c,
         type: 3}
@@ -1631,7 +1631,7 @@ PrefabInstance:
     - target: {fileID: 5016715000807717348, guid: 4054bbe6fe4cf453d890a39133380d5c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.6
+      value: 5.1
       objectReference: {fileID: 0}
     - target: {fileID: 5016715000807717348, guid: 4054bbe6fe4cf453d890a39133380d5c,
         type: 3}
