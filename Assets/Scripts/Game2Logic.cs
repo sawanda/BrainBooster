@@ -25,7 +25,7 @@ public class Game2Logic : MonoBehaviour
 
     IEnumerator TutorialRoutine()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
 
         raycaster.enabled = false;
         tutorialDirector.Play();

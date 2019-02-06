@@ -93,9 +93,21 @@ public class Game1Logic : MonoBehaviour
         }
     }
 
+    IEnumerator checkDebounceRoutine;
     private void CheckAndChangeProblem(int fingerCount)
     {
-        if(fingerCount == currentProblem)
+        if (checkDebounceRoutine != null)
+        {
+            StopCoroutine(checkDebounceRoutine);
+        }
+        checkDebounceRoutine = CheckDebounceRoutine(fingerCount);
+        StartCoroutine(checkDebounceRoutine);
+    }
+
+    IEnumerator CheckDebounceRoutine(int fingerCount)
+    {
+        yield return new WaitForSeconds(0.05f);
+        if (fingerCount == currentProblem)
         {
             StartCoroutine(CorrectRoutine());
         }

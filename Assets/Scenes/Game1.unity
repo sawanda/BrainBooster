@@ -1851,7 +1851,7 @@ PrefabInstance:
         type: 3}
       propertyPath: deactivatedSprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7ad4b73f036bb4e0cade47d77e072a64,
+      objectReference: {fileID: 21300000, guid: da3a8868068344621829e3bc0b397712,
         type: 3}
     - target: {fileID: 7514288312710036812, guid: fdb2d531324c14c849c9c15983589300,
         type: 3}
@@ -1888,6 +1888,12 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 7442035382734299296, guid: fdb2d531324c14c849c9c15983589300,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: da3a8868068344621829e3bc0b397712,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdb2d531324c14c849c9c15983589300, type: 3}
 --- !u!224 &1380547623 stripped
