@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 889645878478042816}
   - component: {fileID: 889645878478042822}
   - component: {fileID: 889645878478042817}
+  - component: {fileID: 1299964694907924861}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.34603062, g: 0.8536877, b: 0.9056604, a: 1}
+  m_Color: {r: 0.3460306, g: 0.8536877, b: 0.9056604, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -74,6 +75,22 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!111 &1299964694907924861
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889645878478042819}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 553eafef8a97d487fb5aed4b605fa350, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 553eafef8a97d487fb5aed4b605fa350, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &889645878573822436
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,7 +231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &889645878769469784
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6439,37 +6456,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
         type: 3}
-      propertyPath: nodes.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
-      propertyPath: nodes.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
-      propertyPath: nodes.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
-      propertyPath: nodes.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
-      propertyPath: nodes.Array.data[4]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
       propertyPath: completeImage
       value: 
       objectReference: {fileID: 889645878769469787}
     - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316229284461793570, guid: 24d544f7d257240d6afc31b59547fc3a,
+        type: 3}
+      propertyPath: completeAnimation
+      value: 
+      objectReference: {fileID: 1299964694907924861}
+    - target: {fileID: 5615856491150381402, guid: 24d544f7d257240d6afc31b59547fc3a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2316229284938342094, guid: 24d544f7d257240d6afc31b59547fc3a,
+        type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2316229284142882800, guid: 24d544f7d257240d6afc31b59547fc3a,
@@ -12567,6 +12574,12 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[599].y
       value: 260
       objectReference: {fileID: 0}
+    - target: {fileID: 2316229284843969327, guid: 24d544f7d257240d6afc31b59547fc3a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: adc77ddab7f8b4ec7acdf2831d913555,
+        type: 3}
     - target: {fileID: 5601592818714864321, guid: 24d544f7d257240d6afc31b59547fc3a,
         type: 3}
       propertyPath: lineSegment
@@ -12581,11 +12594,6 @@ PrefabInstance:
         type: 3}
       propertyPath: lineSegment
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 5615856491150381402, guid: 24d544f7d257240d6afc31b59547fc3a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24d544f7d257240d6afc31b59547fc3a, type: 3}

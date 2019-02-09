@@ -40,14 +40,14 @@ public class NamingLogic : MonoBehaviour
         if (CheckDuplicateName(namingBox.text) == true) return;
 
         RegisterName(namingBox.text);
-        SetNameAsActive(namingBox.text);
+        GameSaveManager.SetNameAsActive(namingBox.text);
 
         SceneManager.LoadScene(nextSceneRemember);
     }
 
     private bool CheckDuplicateName(string name)
     {
-        string[] allNamesArray = PlayerPrefManager.AllPlayerNames();
+        string[] allNamesArray = GameSaveManager.AllPlayerNames;
         if (allNamesArray.Contains(name))
         {
             return true;
@@ -60,21 +60,8 @@ public class NamingLogic : MonoBehaviour
 
     private void RegisterName(string newName)
     {
-        string[] allNames = PlayerPrefManager.AllPlayerNames();
-        // [AAA BBB CCC]
-        if (allNames.Length == 1 && allNames[0] == "") 
-        {
-            PlayerPrefs.SetString(PlayerPrefManager.keyNames, newName);
-        }
-        else
-        {
-            var allNamesAddedNewName = allNames.Concat(new string[] { newName });
-            string prepareToSaveBack = string.Join(",", allNamesAddedNewName);
-            //"AAA,BBB,CCC,DDD"
-            PlayerPrefs.SetString(PlayerPrefManager.keyNames, prepareToSaveBack);
-        }
+        GameSave newPlayer = new GameSave(newName);
+        GameSaveManager.SaveToDevice(newPlayer);
     }
 
-    private void SetNameAsActive(string nameToActive) 
-        => PlayerPrefs.SetString(PlayerPrefManager.keyActiveName, nameToActive);
 }

@@ -182,7 +182,7 @@ MonoBehaviour:
   currentLineProgress: 0
   currentRedDotProgress: 0
   rememberCompleteLines: []
-  won: 1
+  won: 0
   completeImage: {fileID: 0}
   forHiding: {fileID: 5615856491150381402}
   lineRenderer: {fileID: 2316229284142882800}

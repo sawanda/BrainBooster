@@ -8,9 +8,10 @@ public class TitleScreen : MonoBehaviour
     public const string titleSceneName = "Title";
     public const string gameSelectSceneName = "GameSelect";
 
+
     public void PushButton()
     {
-        if (PlayerPrefs.GetString(PlayerPrefManager.keyActiveName, "") == "")
+        if (GameSaveManager.ActiveSave == null)
         {
             NamingLogic.GoToNaming(nextScene: gameSelectSceneName, backScene: titleSceneName);
         }

@@ -15,6 +15,7 @@ public class Waypoint : MonoBehaviour
     public bool won;
     public GameObject completeImage;
     public GameObject forHiding;
+    public Animation completeAnimation;
    
     public void Dragged(BaseEventData baseEventData)
     {
@@ -62,7 +63,7 @@ public class Waypoint : MonoBehaviour
     public void ApplyCurrentProgress()
     {
         List<Vector3> partialLine = new List<Vector3>();
-        for(int i = 0; i < currentLineProgress && i < rememberCompleteLines.Length; i++)
+        for(int i = 0; i <= currentLineProgress && i < rememberCompleteLines.Length; i++)
         {
             partialLine.Add(rememberCompleteLines[i]);
         }
@@ -73,7 +74,10 @@ public class Waypoint : MonoBehaviour
     public void Update()
     {
         ApplyCurrentProgress();
-        CheckForComplete();
+        if (Application.isPlaying)
+        {
+            CheckForComplete();
+        }
     }
 
     public void EnterPage()
@@ -88,12 +92,19 @@ public class Waypoint : MonoBehaviour
 
     private void CheckForComplete()
     {
-        if(currentRedDotProgress == nodes.Length)
+        if(currentRedDotProgress == nodes.Length && won == false)
         {
             won = true;
-            completeImage.SetActive(true);
-            forHiding.SetActive(false);
+            StartCoroutine(WinRoutine());
         }
+    }
+
+    IEnumerator WinRoutine()
+    {
+        completeAnimation.Play();
+        yield return new WaitForSeconds(1);
+        completeImage.SetActive(true);
+        forHiding.SetActive(false);
     }
 
     [Space]
