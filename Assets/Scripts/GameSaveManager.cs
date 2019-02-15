@@ -9,7 +9,7 @@ public static class GameSaveManager
     public static GameSave ActiveSave { get; private set; }
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
-    public static void RecallPlayer()
+    private static void RecallPlayer()
     {
         // for(int i = 0; i < 10 ; i++)
         // {
@@ -61,6 +61,11 @@ public static class GameSaveManager
 
         GameSave[] allSaves = onlyPlayerNames.Select( x => ReadSaveByPlayerName(x)).ToArray();
         return allSaves;
+    }
+
+    public static void DeleteSaveFile(GameSave gameSave)
+    {
+        File.Delete(Application.persistentDataPath + "/" + gameSave.name + ".bb");
     }
 
     public static void SaveToDevice(GameSave gameSave)

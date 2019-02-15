@@ -12,9 +12,12 @@ public class StatsLogic : MonoBehaviour
     public GameSave[] allPlayers;
 
     public GameSaveView[] gameSaveViews;
+
+    public GameSaveView topRightGameSaveView;
     
     public Button nextButton;
     public Button previousButton;
+    public Button deleteButton;
 
     public int PageNeeded => Mathf.CeilToInt(allPlayers.Length / 4f);
 
@@ -29,6 +32,18 @@ public class StatsLogic : MonoBehaviour
     public void GoToNaming() 
     {
         NamingLogic.GoToNaming(nextScene: "GameSelect", backScene: "Stats");
+    }
+
+    public void Update()
+    {
+        if(GameSaveManager.AllPlayerNames.Length > 1)
+        {
+            deleteButton.gameObject.SetActive(true);
+        }
+        else
+        {
+            deleteButton.gameObject.SetActive(false);
+        }
     }
 
     public void Start()
@@ -52,6 +67,28 @@ public class StatsLogic : MonoBehaviour
         currentPage++;
         ClampCurrentPage();
         ShowCurrentPage();
+    }
+
+    public void DeleteButton()
+    {
+        GameSave[] allSaves = GameSaveManager.ReadAllSaves();
+        int selfPosition = -1;
+        for( int i = 0; i < allSaves.Length; i++)
+        {
+            if(allSaves[i].name == GameSaveManager.ActiveSave.name)
+            {
+                selfPosition = i;
+                break;
+            }
+        }
+
+        GameSaveManager.DeleteSaveFile(allSaves[selfPosition]);
+
+        int nextIndex = selfPosition == allSaves.Length - 1 ? selfPosition - 1 : selfPosition + 1;
+
+        GameSaveManager.SetNameAsActive(allSaves[nextIndex].name);
+
+        Start();
     }
 
     private void ClampCurrentPage()

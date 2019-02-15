@@ -362,12 +362,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animalImage: {fileID: 7975016097734356932}
+  border: {fileID: 0}
   playerName: {fileID: 3534793042053583755}
   animalSprites:
-  - {fileID: 21300000, guid: 3d9b70dd170494cdb9adc1b24dbcdd75, type: 3}
-  - {fileID: 21300000, guid: 7fc0450f2252c4415b85252c1d41cf48, type: 3}
-  - {fileID: 21300000, guid: d459da98454444afe802332ee696eb27, type: 3}
-  startWithActiveSave: 1
+  - {fileID: 21300000, guid: 4cf9930b4007a4593bd4507925593eb3, type: 3}
+  - {fileID: 21300000, guid: 895598997e9bd4a64a3b5eabcec9e47d, type: 3}
+  - {fileID: 21300000, guid: a5e5d96a53d5248e9b24bb7e439c5274, type: 3}
+  alwaysDisplayActiveSave: 1
 --- !u!1 &8642706139763791648
 GameObject:
   m_ObjectHideFlags: 0
