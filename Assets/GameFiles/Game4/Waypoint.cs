@@ -16,6 +16,15 @@ public class Waypoint : MonoBehaviour
     public GameObject completeImage;
     public GameObject forHiding;
     public Animation completeAnimation;
+
+[ContextMenu("@@#IJE@JI")]
+    public void Haha()
+    {
+        for(int i = 0 ; i < rememberCompleteLines.Length; i++)
+        {
+            rememberCompleteLines[i] = new Vector3(rememberCompleteLines[i].x, rememberCompleteLines[i].y, 0);
+        }
+    }
    
     public void Dragged(BaseEventData baseEventData)
     {

@@ -1,16 +1,20 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Game5Logic : MonoBehaviour
 {
-    private void BackToTrain() => SceneManager.LoadScene(GameSelectLogic.learnSceneName);
+    public void BackToTrain() => SceneManager.LoadScene(GameSelectLogic.learnSceneName);
+    public void BackToPlay() => SceneManager.LoadScene("Play");
     public Button forwardButton;
     public RectTransform[] pages;
     public int currentPage = 0;
+    public UnityEvent endAction;
 
-    public void Start()
+    public void StartAfterCoin  ()
     {
+        Utility.correctCount = 0;
         ShowCurrentPage();
         ShowHideForwardButton();
     }
@@ -18,9 +22,15 @@ public class Game5Logic : MonoBehaviour
     public void Forward()
     {
         currentPage++;
-        currentPage = Mathf.Clamp(currentPage, 0, pages.Length);
-        ShowCurrentPage();
-        ShowHideForwardButton();
+        if (currentPage == pages.Length)
+        {
+            endAction.Invoke();
+        }
+        else
+        {
+            ShowCurrentPage();
+            ShowHideForwardButton();
+        }
     }
 
     public void Backward()

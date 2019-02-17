@@ -27,6 +27,12 @@ public class GameSave
     public int shapesLevel; //right
     public int analysisLevel; //left
 
+    public int game1Score;
+    public int game2Score;
+    public int game3Score;
+    public int game4Score;
+    public int game5Score;
+
     public DateTime startPlayingTime;
 
     public GameSave(string newName)

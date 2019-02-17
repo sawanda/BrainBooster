@@ -455,6 +455,7 @@ MonoBehaviour:
   currentRandomize: 0
   currentShake: 0
   audioPlayer: {fileID: 721501171102745892}
+  previousFrameShake: {x: 0, y: 0, z: 0}
   gift: {fileID: 4971750766421031993}
 --- !u!95 &2454564516463811011
 Animator:
