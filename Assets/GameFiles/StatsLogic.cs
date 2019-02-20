@@ -18,6 +18,9 @@ public class StatsLogic : MonoBehaviour
     public Button nextButton;
     public Button previousButton;
     public Button deleteButton;
+    public void GoToPlay() {
+        SceneManager.LoadScene("Play");
+    }
 
     public int PageNeeded => Mathf.CeilToInt(allPlayers.Length / 4f);
 

@@ -75,22 +75,34 @@ public class Game5Page : MonoBehaviour
             }
         }
     }
+    public bool WrongBefore;
+    public void Answer(Game5Choice choice5)
 
-    public void Answer(int i)
     {
         int correctAnswer = currentRandomize;
-        if (i == correctAnswer)
-        {
-            currentRound++;
+        if ( choice5.Answer== correctAnswer)
+        {  
+            
+           currentRound++;
+           if(!WrongBefore){
+               ScoreAll.Score++;
+           }
             if (currentRound > 2)
             {
+        
                 logic.Forward();
             }
             else
             {
+                
                 state = Game5State.Wait;
                 StartCoroutine(WinRoutine());
             }
+        }
+        else{
+            WrongBefore = true;
+            choice5.GetComponent<Animation>().Play();
+
         }
     }
 

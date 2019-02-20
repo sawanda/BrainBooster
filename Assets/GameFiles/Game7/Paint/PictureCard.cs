@@ -8,6 +8,9 @@ public class PictureCard  : MonoBehaviour
     public Image completeImage;
     public Image cardWithRabbit;
     public Image card;
+    public PaintLogic cardLogic;
+    public Image cardWhite;
+
 
     public void Pass()
     {
@@ -16,5 +19,10 @@ public class PictureCard  : MonoBehaviour
 
         cardWithRabbit.enabled = false;
         card.enabled = true;
+        cardWhite.enabled = true;
+    }
+    public void Click(){
+        Debug.Log("Click");
+        cardLogic.StartPainting(this);
     }
 }

@@ -6,17 +6,36 @@ public class Game6page : MonoBehaviour
 {
     public int answer;
     public Game5Logic game5Logic;
-
-    public void Answer(int theAnswer)
-    {
-        if(answer == theAnswer)
+    public bool WrongBefore;
+    public void Answer(Game5Choice Choice5){
+       if(answer == Choice5.Answer)
         {
-            Utility.correctCount++;
+
+            if(!WrongBefore)
+            {
+               ScoreAll.Score++;
+            }
+
             game5Logic.Forward();
+            
         }
         else
-        {
-            game5Logic.Forward();
+        {   
+            WrongBefore = true; 
+           // game5Logic.Forward();
+            Choice5.GetComponent<Animation>().Play();
         }
     }
+    // public void Answer(int theAnswer)
+    // {
+    //     if(answer == theAnswer)
+    //     {
+    //         Utility.correctCount++;
+    //         game5Logic.Forward();
+    //     }
+    //     else
+    //     {
+    //         game5Logic.Forward();
+    //     }
+    // }
 }

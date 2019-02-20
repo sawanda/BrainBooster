@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6771028316788833392}
   - component: {fileID: 9148574167052506834}
   - component: {fileID: 534317880149095262}
+  - component: {fileID: 3576551667544844811}
   m_Layer: 5
   m_Name: Game5Choice
   m_TagString: Untagged
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answerImage: {fileID: 0}
   sound: {fileID: 0}
+  Answer: 0
 --- !u!114 &534317880149095262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +145,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!111 &3576551667544844811
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6771028316788833394}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

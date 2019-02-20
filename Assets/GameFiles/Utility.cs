@@ -1,4 +1,4 @@
-public static class Utility
+public static class ScoreAll
 {
-    public static int correctCount = 0;
+    public static int Score = 0;
 }

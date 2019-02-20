@@ -86,18 +86,28 @@ public class PaintLogic : MonoBehaviour
 
     PictureProblem pp;
     PictureCard selectedCard;
+
+    GameObject createdProblem;
+    GameObject createdHint;
+
     public void StartPainting(PictureCard pc)
     {
         selectedCard = pc;
-        GameObject createdProblem = Instantiate(pc.problem, Vector3.zero, Quaternion.identity, problemParent);
+        createdProblem = Instantiate(pc.problem, Vector3.zero, Quaternion.identity, problemParent);
         createdProblem.transform.localPosition = Vector3.zero;
 
         pp = createdProblem.GetComponent<PictureProblem>();
         GameObject hint = pp.hint;
-        GameObject createdHint = Instantiate(hint, Vector3.zero, Quaternion.identity, hintParent);
+        createdHint = Instantiate(hint, Vector3.zero, Quaternion.identity, hintParent);
         createdHint.transform.localPosition = Vector3.zero;
 
         pp.GoWhite();
+    }
+
+    public void DestroyProblem()
+    {
+        Destroy(createdProblem);
+        Destroy(createdHint);
     }
 
     public void Submit()

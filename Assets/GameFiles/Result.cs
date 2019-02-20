@@ -7,17 +7,19 @@ public class Result : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public int game;
+    public Animation Balloon;
 
     public void Show()
     {
-        scoreText.text = Utility.correctCount.ToString();
+        scoreText.text = ScoreAll.Score.ToString();
         this.gameObject.SetActive(true);
+        Balloon.Play();
 
 
         switch(game)
         {
             case 6:
-                GameSaveManager.ActiveSave.game3Score = Utility.correctCount;
+                GameSaveManager.ActiveSave.game3Score = ScoreAll.Score;
                 break;
         }
 

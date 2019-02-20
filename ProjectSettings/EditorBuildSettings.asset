@@ -30,6 +30,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Game4.unity
     guid: f93c67b983a7f4be2b61155f845a9d1c
   - enabled: 1
+    path: Assets/Scenes/Game5.unity
+    guid: 4c29f728b24124f3c9671e7d172d6ecd
+  - enabled: 1
+    path: Assets/Scenes/Game6.unity
+    guid: c5eea90754d244e0fba57725eba2a087
+  - enabled: 1
+    path: Assets/Scenes/Game7.unity
+    guid: 37cda14375b814eba8a812f93b35d423
+  - enabled: 1
     path: Assets/Scenes/Stats.unity
     guid: ffdd4c00cd5a2469590ae07eec92bf44
   - enabled: 1

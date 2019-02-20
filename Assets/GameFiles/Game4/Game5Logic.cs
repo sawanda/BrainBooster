@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -12,9 +14,13 @@ public class Game5Logic : MonoBehaviour
     public int currentPage = 0;
     public UnityEvent endAction;
 
+    public void Random(){
+        pages = pages.OrderBy( a=> Guid.NewGuid()).ToArray();
+    }
+
     public void StartAfterCoin  ()
     {
-        Utility.correctCount = 0;
+        ScoreAll.Score = 0;
         ShowCurrentPage();
         ShowHideForwardButton();
     }
@@ -41,6 +47,14 @@ public class Game5Logic : MonoBehaviour
             BackToTrain();
             return;
         }
+        ShowCurrentPage();
+        ShowHideForwardButton();
+    }
+
+    public void FirstPage()
+    {
+        currentPage = 0;
+        ScoreAll.Score = 0;
         ShowCurrentPage();
         ShowHideForwardButton();
     }

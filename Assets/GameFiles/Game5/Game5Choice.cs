@@ -6,4 +6,5 @@ public class Game5Choice : MonoBehaviour
 {
     public Sprite answerImage;
     public AudioClip sound;
+    public int Answer;
 }
