@@ -4,6 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum PaintState
 {
@@ -14,18 +15,21 @@ public enum PaintState
 
 public class PaintLogic : MonoBehaviour
 {
+
+    public void BackToPlay() => SceneManager.LoadScene("Play");
     public PaintState paintState;
     public GameObject brush;
     public GameObject eraser;
     public Color selectedColor;
-
     public ColorPalette[] colorPalettes;
 
     public RenderTexture paintingTexture;
+    
 
     [ContextMenu("Save Image")]
     public void SaveImage()
     {
+        
         var saved = RenderTexture.active;
         RenderTexture.active = paintingTexture;
 
@@ -38,7 +42,7 @@ public class PaintLogic : MonoBehaviour
 
         Debug.Log("SAVING " + Application.persistentDataPath);
         File.WriteAllBytes(Application.persistentDataPath + "/test.png", pngBytes);
-
+        
     }
 
     public void BrushTouched()

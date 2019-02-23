@@ -396,6 +396,11 @@ MonoBehaviour:
   - {fileID: 1233882616224716866}
   - {fileID: 1233882615347097916}
   - {fileID: 1233882615624811098}
+  afterCoinsIn:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1001 &4009552876680306211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -408,6 +413,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4009552877702429325}
     - target: {fileID: 9162644181034037358, guid: 708f75b0d33784ba891c4b2d679e2b48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -513,11 +523,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4009552877702429325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708f75b0d33784ba891c4b2d679e2b48, type: 3}
 --- !u!224 &5227706439819701837 stripped
@@ -550,6 +555,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4009552877702429325}
     - target: {fileID: 9162644181034037358, guid: 708f75b0d33784ba891c4b2d679e2b48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -655,11 +665,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4009552877702429325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708f75b0d33784ba891c4b2d679e2b48, type: 3}
 --- !u!224 &5227706439433810890 stripped
@@ -692,6 +697,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4009552877702429325}
     - target: {fileID: 9162644181034037358, guid: 708f75b0d33784ba891c4b2d679e2b48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -797,11 +807,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4009552877702429325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708f75b0d33784ba891c4b2d679e2b48, type: 3}
 --- !u!224 &5227706439345894485 stripped
@@ -834,6 +839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4009552877702429325}
     - target: {fileID: 9162644181034037358, guid: 708f75b0d33784ba891c4b2d679e2b48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -939,11 +949,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4009552877702429325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708f75b0d33784ba891c4b2d679e2b48, type: 3}
 --- !u!224 &5227706439084541747 stripped
@@ -1081,6 +1086,36 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3239288977236521826}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BackToPlay
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc7d4329b44614fad847a2b26b405830, type: 3}
 --- !u!224 &7064012780671155872 stripped
@@ -1101,6 +1136,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin
       objectReference: {fileID: 0}
+    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4009552877702429325}
     - target: {fileID: 9162644181034037358, guid: 708f75b0d33784ba891c4b2d679e2b48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1206,11 +1246,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 2790941675419485793, guid: 708f75b0d33784ba891c4b2d679e2b48,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 4009552877702429325}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708f75b0d33784ba891c4b2d679e2b48, type: 3}
 --- !u!114 &7942064845226831416 stripped
