@@ -261,7 +261,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: bfb0293137ea8471ea64c0e40af4095a, type: 3}
+      objectReference: {fileID: 8300000, guid: 34ad7d3f3aa444296b338f718a0744c7, type: 3}
     - target: {fileID: 263807986106135413, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: m_Sprite
@@ -278,7 +278,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: ddfbea97d37814ffcbb99faf400eb526, type: 3}
+      objectReference: {fileID: 8300000, guid: 3b32dd401005641f7bfc55abe22d053e, type: 3}
     - target: {fileID: 2353410278067116503, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: Answer
@@ -300,7 +300,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: 37f39e2e92fdd4884a58f65c2f182667, type: 3}
+      objectReference: {fileID: 8300000, guid: 5aaa2a1b2b34c4e828a83865a4259e0d, type: 3}
     - target: {fileID: 6550917439938190114, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: Answer
@@ -675,16 +675,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8421265970852286487, guid: d882086bdfbdd483a9f88de4a9505b5b,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8421265970852286487, guid: d882086bdfbdd483a9f88de4a9505b5b,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5000312025121180094, guid: d882086bdfbdd483a9f88de4a9505b5b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -794,6 +784,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421265970852286487, guid: d882086bdfbdd483a9f88de4a9505b5b,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421265970852286487, guid: d882086bdfbdd483a9f88de4a9505b5b,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d882086bdfbdd483a9f88de4a9505b5b, type: 3}
@@ -931,7 +931,7 @@ PrefabInstance:
     - target: {fileID: 4971750767628394017, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4971750767628394018, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
@@ -1053,7 +1053,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: bfb0293137ea8471ea64c0e40af4095a, type: 3}
+      objectReference: {fileID: 8300000, guid: 11a646b0748a64dbaad2fef408f6a5e4, type: 3}
     - target: {fileID: 263807986106135413, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: m_Sprite
@@ -1070,7 +1070,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: ddfbea97d37814ffcbb99faf400eb526, type: 3}
+      objectReference: {fileID: 8300000, guid: 9ee3d442c0924434289ba49e9aba73e4, type: 3}
     - target: {fileID: 2353410278067116503, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: Answer
@@ -1092,7 +1092,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: 37f39e2e92fdd4884a58f65c2f182667, type: 3}
+      objectReference: {fileID: 8300000, guid: c488d8222bdf04f4b9b4b0c1cacd65a6, type: 3}
     - target: {fileID: 6550917439938190114, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: Answer
@@ -1419,7 +1419,7 @@ PrefabInstance:
     - target: {fileID: 4009552878602749633, guid: db60571e056414cf6bb521a7a459cd8d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4009552878602749632, guid: db60571e056414cf6bb521a7a459cd8d,
         type: 3}
@@ -1704,7 +1704,7 @@ PrefabInstance:
     - target: {fileID: 4971750767628394017, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4971750767628394018, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
@@ -1826,7 +1826,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: bfb0293137ea8471ea64c0e40af4095a, type: 3}
+      objectReference: {fileID: 8300000, guid: 716c3525279f042649cc0587f983da18, type: 3}
     - target: {fileID: 263807986106135413, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: m_Sprite
@@ -1843,7 +1843,7 @@ PrefabInstance:
         type: 3}
       propertyPath: sound
       value: 
-      objectReference: {fileID: 8300000, guid: ddfbea97d37814ffcbb99faf400eb526, type: 3}
+      objectReference: {fileID: 8300000, guid: 8731e52ef4bca4b25be7f6166b7f158f, type: 3}
     - target: {fileID: 2353410278067116503, guid: f93015245f9ce4dfbbce0c2510f7d5ad,
         type: 3}
       propertyPath: Answer
