@@ -17,6 +17,8 @@ public class MixingBucket : MonoBehaviour
     public AudioClip[] soundOfColors; //6
     public AudioSource audioSource;
 
+    public Game8Logic mixColor;
+
     public void Drop()
     {
         if (mixedColor.Count < 2)
@@ -26,7 +28,7 @@ public class MixingBucket : MonoBehaviour
             MixColor();
         }
     }
-
+    
     public void Reset()
     {
         mixedColor.Clear();
@@ -82,7 +84,14 @@ public class MixingBucket : MonoBehaviour
                 audioSource.clip = soundOfColors[5];
                 audioSource.Play();
             }
-            
+            mixColor.CheckColor(color1: mixedColor[0], color2: mixedColor[1]);
         }
+
+        
+    
     }
+
+    
+
+
 }

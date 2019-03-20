@@ -15,9 +15,11 @@ public class Result : MonoBehaviour
         this.gameObject.SetActive(true);
         Balloon.Play();
 
-
         switch(game)
         {
+            case 8:
+                GameSaveManager.ActiveSave.game4Score= ScoreAll.Score;
+                break;
             case 6:
                 GameSaveManager.ActiveSave.game3Score = ScoreAll.Score;
                 break;
