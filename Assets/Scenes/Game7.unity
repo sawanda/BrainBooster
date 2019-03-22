@@ -2913,6 +2913,7 @@ MonoBehaviour:
   paintingTexture: {fileID: 0}
   problemParent: {fileID: 1704522671}
   hintParent: {fileID: 196085837}
+  selectedCard: {fileID: 0}
 --- !u!4 &1679015691
 Transform:
   m_ObjectHideFlags: 0

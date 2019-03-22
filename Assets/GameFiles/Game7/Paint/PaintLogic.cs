@@ -89,7 +89,7 @@ public class PaintLogic : MonoBehaviour
     }
 
     PictureProblem pp;
-    PictureCard selectedCard;
+    public PictureCard selectedCard;
 
     GameObject createdProblem;
     GameObject createdHint;

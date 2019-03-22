@@ -70,7 +70,11 @@ public class GameSave
         {
             float leftBrainMax = Math.Max(game5Score.Result, game9Score.Result);
             float rightBrainMax = Math.Max(game6Score.Result, game10Score.Result);
-            if(leftBrainMax >= rightBrainMax)
+            if(leftBrainMax == 0)
+            {
+                return false;
+            }
+            else if(leftBrainMax >= rightBrainMax)
             {
                 return true;
             }
@@ -87,7 +91,11 @@ public class GameSave
         {
             float leftBrainMax = Math.Max(game5Score.Result, game9Score.Result);
             float rightBrainMax = Math.Max(game6Score.Result, game10Score.Result);
-            if(rightBrainMax >= leftBrainMax)
+            if(rightBrainMax == 0)
+            {
+                return false;
+            }
+            else if(rightBrainMax >= leftBrainMax)
             {
                 return true;
             }

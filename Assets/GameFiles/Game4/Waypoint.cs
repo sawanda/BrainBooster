@@ -121,6 +121,26 @@ public class Waypoint : MonoBehaviour
     public float radius;
     public int resolution = 100;
 
+    [ContextMenu("Create Half Circle")]
+    public void CreateHalfCircle()
+    {
+        List<Vector3> collectPoint = new List<Vector3>();
+        float diameter = radius * 2;
+        float piece = diameter / (float)resolution;
+        for (float x = -radius; x < radius; x += piece)
+        {
+            float ySquared = (radius * radius) - (x * x);
+            float y = Mathf.Sqrt(ySquared);
+            collectPoint.Add(new Vector3(x, y, 0));
+        }
+
+        collectPoint.Add(new Vector3(radius, 0));
+        collectPoint.Add(new Vector3(-radius, 0));
+
+        lineRenderer.positionCount = collectPoint.Count;
+        lineRenderer.SetPositions(collectPoint.ToArray());
+    }
+
     [ContextMenu("Create Circle")]
     public void CreateCircle()
     {
