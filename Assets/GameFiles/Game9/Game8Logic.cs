@@ -8,7 +8,8 @@ using UnityEngine.UI;
 
 public class Game8Logic : MonoBehaviour
 {
-    public void BackToPlay() => SceneManager.LoadScene(GameSelectLogic.learnSceneName);
+    
+    public void BackToPlay() => SceneManager.LoadScene("Play");
 
     public ColorBucket followerBucket;
     public MixingBucket mixingBucket;
@@ -19,6 +20,7 @@ public class Game8Logic : MonoBehaviour
     public PlayableDirector tutorialDirector;
 
     public GameObject [] hint;
+
 
     ColorProblem currentProblem;
     
@@ -50,7 +52,7 @@ public class Game8Logic : MonoBehaviour
             }
             else
             {
-                CreateProblem();
+                StartCoroutine(WaitAndCreateProblemRoutine());
             }
         }
         else
@@ -59,6 +61,13 @@ public class Game8Logic : MonoBehaviour
             wrongOnce = true;
         }
     }
+
+    private IEnumerator WaitAndCreateProblemRoutine()
+    {
+        yield return new WaitForSeconds(1.4f);
+        CreateProblem();
+    }
+
 
     private void EndGame()
     {
@@ -109,6 +118,7 @@ public class Game8Logic : MonoBehaviour
 
     private void CreateProblem()
     {
+        mixingBucket.Reset();
         wrongOnce = false;
         currentProblem = (ColorProblem)UnityEngine.Random.Range(0, 3);
 
@@ -135,7 +145,6 @@ public class Game8Logic : MonoBehaviour
             h3.SetActive(true);
         }
 
-        mixingBucket.Reset();
     }
 
     IEnumerator TutorialRoutine()

@@ -24,6 +24,7 @@ public class Game5Page : MonoBehaviour
 
     public void ManualStart()
     {
+        currentRound = 0;
         bag = new int[] { 0, 1, 2 };
         Shuffle(bag);
         StartRound();
@@ -89,8 +90,8 @@ public class Game5Page : MonoBehaviour
            }
             if (currentRound > 2)
             {
-        
-                logic.Forward();
+                state = Game5State.Wait;
+                StartCoroutine(ForwardRoutine());
             }
             else
             {
@@ -104,6 +105,14 @@ public class Game5Page : MonoBehaviour
             choice5.GetComponent<Animation>().Play();
 
         }
+    }
+
+    IEnumerator ForwardRoutine()
+    {
+        Sprite giftBox = gift.sprite;
+        gift.sprite = currentChoice.answerImage;
+        yield return new WaitForSeconds(1);
+        logic.Forward();
     }
 
     public Image gift;

@@ -370,6 +370,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: d7c4b244105684bc3ab2d0779e743a80, type: 3}
   - {fileID: 8300000, guid: 3f12836fee4374de98bd4cf4e46b324e, type: 3}
   audioSource: {fileID: 124816181}
+  mixColor: {fileID: 0}
 --- !u!114 &314042373 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5871734696543168014, guid: 4607b88b9639c418eb7fca92e39a1a1d,

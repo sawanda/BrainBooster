@@ -571,6 +571,11 @@ PrefabInstance:
       propertyPath: Balloon
       value: 
       objectReference: {fileID: 251537827}
+    - target: {fileID: 4760495788184311462, guid: d882086bdfbdd483a9f88de4a9505b5b,
+        type: 3}
+      propertyPath: game
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5000312025762354173, guid: d882086bdfbdd483a9f88de4a9505b5b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -675,16 +680,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5883200102569128994, guid: d882086bdfbdd483a9f88de4a9505b5b,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5883200102569128994, guid: d882086bdfbdd483a9f88de4a9505b5b,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5000312025121180094, guid: d882086bdfbdd483a9f88de4a9505b5b,
         type: 3}
@@ -795,6 +790,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883200102569128994, guid: d882086bdfbdd483a9f88de4a9505b5b,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883200102569128994, guid: d882086bdfbdd483a9f88de4a9505b5b,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8421265970852286487, guid: d882086bdfbdd483a9f88de4a9505b5b,
         type: 3}

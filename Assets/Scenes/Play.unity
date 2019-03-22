@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActiveSignIn
       objectReference: {fileID: 0}
+    - target: {fileID: 8427891611758258237, guid: f07830453e49845e3b7dc78e9bfe7163,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8427891611758258236, guid: f07830453e49845e3b7dc78e9bfe7163,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,6 +306,11 @@ PrefabInstance:
     - target: {fileID: 8427891611758258236, guid: f07830453e49845e3b7dc78e9bfe7163,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8225383880883990908, guid: f07830453e49845e3b7dc78e9bfe7163,
+        type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

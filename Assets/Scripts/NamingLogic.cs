@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -21,6 +22,11 @@ public class NamingLogic : MonoBehaviour
 #endif
 
     public TMP_InputField namingBox;
+    public Toggle toggleBoy;
+    public Toggle toggleGirl;
+    public TMP_InputField age;
+    public GameObject warning;
+    
 
     const string namingScene = "Naming";
 
@@ -37,13 +43,21 @@ public class NamingLogic : MonoBehaviour
     public void NextPress()
     {
         if(namingBox.text == "") return;
-        if (CheckDuplicateName(namingBox.text) == true) return;
+        int ageInteger = int.Parse(age.text);
+        if(ageInteger < 2 || ageInteger > 5) return;
+        if(toggleBoy.isOn == false && toggleGirl.isOn == false) return;
+        if (CheckDuplicateName(namingBox.text) == true)
+        {
+            warning.SetActive(true);
+            return;
+        }
 
-        RegisterName(namingBox.text);
+        RegisterNewPlayer(namingBox.text, ageInteger, toggleBoy.isOn ? GameSave.Sex.Boy : GameSave.Sex.Girl);
         GameSaveManager.SetNameAsActive(namingBox.text);
 
         SceneManager.LoadScene(nextSceneRemember);
     }
+
 
     private bool CheckDuplicateName(string name)
     {
@@ -58,9 +72,9 @@ public class NamingLogic : MonoBehaviour
         }
     }
 
-    private void RegisterName(string newName)
+    private void RegisterNewPlayer(string newName, int age, GameSave.Sex sex)
     {
-        GameSave newPlayer = new GameSave(newName);
+        GameSave newPlayer = new GameSave(newName, age, sex);
         GameSaveManager.SaveToDevice(newPlayer);
     }
 

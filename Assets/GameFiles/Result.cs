@@ -17,13 +17,20 @@ public class Result : MonoBehaviour
 
         switch(game)
         {
-            case 8:
-                GameSaveManager.ActiveSave.game4Score= ScoreAll.Score;
+            case 1:
+                GameSaveManager.ActiveSave.game5Score.RecordScore(ScoreAll.Score);
                 break;
-            case 6:
-                GameSaveManager.ActiveSave.game3Score = ScoreAll.Score;
+            case 2:
+                GameSaveManager.ActiveSave.game6Score.RecordScore(ScoreAll.Score);
+                break;
+            case 3:
+                GameSaveManager.ActiveSave.game9Score.RecordScore(ScoreAll.Score);
+                break;
+            case 4:
+                GameSaveManager.ActiveSave.game10Score.RecordScore(ScoreAll.Score);
                 break;
         }
+        Debug.Log(GameSaveManager.ActiveSave.game6Score);
 
         GameSaveManager.SaveToDevice(GameSaveManager.ActiveSave);
     }

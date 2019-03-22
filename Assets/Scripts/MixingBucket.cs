@@ -48,7 +48,12 @@ public class MixingBucket : MonoBehaviour
         }
         else if (mixedColor.Count == 2)
         {
-            if(mixedColor.Contains(BucketColor.Red) && mixedColor.Contains(BucketColor.Blue))
+            if(mixedColor[0] == mixedColor[1])
+            {
+                Reset();
+                return;
+            }
+            else if(mixedColor.Contains(BucketColor.Red) && mixedColor.Contains(BucketColor.Blue))
             {
                 circleColor.color = possibleColors[0];
                 audioSource.clip = soundOfColors[0];
@@ -86,12 +91,5 @@ public class MixingBucket : MonoBehaviour
             }
             mixColor.CheckColor(color1: mixedColor[0], color2: mixedColor[1]);
         }
-
-        
-    
     }
-
-    
-
-
 }

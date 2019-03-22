@@ -18,6 +18,8 @@ public class Game9Logic : MonoBehaviour
     [SerializeField] 
     private PlayStage currentStage;
 
+    public Result result;
+
 
     public GraphicRaycaster raycaster;
     [Space]
@@ -35,6 +37,7 @@ public class Game9Logic : MonoBehaviour
 
     void Start() 
     {
+        stage = 0;
         RandomProblem();
         ChangeStage(PlayStage.Stage3);
         SetDotAndNumber(0);
@@ -82,7 +85,7 @@ public class Game9Logic : MonoBehaviour
 
         switch (currentStage)
         {
-            
+
             case PlayStage.Stage3:
                 CheckAndChangeProblem(fingerCount);
                 break;
@@ -100,6 +103,7 @@ public class Game9Logic : MonoBehaviour
         StartCoroutine(checkDebounceRoutine);
     }
 
+    int stage = 0;
     IEnumerator CheckDebounceRoutine(int fingerCount)
     {
         yield return new WaitForSeconds(0.05f);
@@ -114,9 +118,18 @@ public class Game9Logic : MonoBehaviour
         raycaster.enabled = false;
         correctDirector.Stop();
         correctDirector.Play();
+
         yield return new WaitForSeconds((float)correctDirector.playableAsset.duration);
-        RandomProblem();
-        raycaster.enabled = true;
+        stage++;
+        if (stage == 5)
+        {
+            result.Show();
+        }
+        else
+        {
+            RandomProblem();
+            raycaster.enabled = true;
+        }
     }
 
     IEnumerator TutorialRoutine()
