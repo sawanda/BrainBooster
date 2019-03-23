@@ -34,6 +34,7 @@ public class Game9Logic : MonoBehaviour
     public AudioSource numberSoundSource;
 
     public int currentProblem;
+    
 
     void Start() 
     {
@@ -44,7 +45,8 @@ public class Game9Logic : MonoBehaviour
         StartCoroutine(TutorialRoutine());
     }
 
-    public void BackToTrain() => SceneManager.LoadScene(GameSelectLogic.learnSceneName);
+    //public void BackToTrain() => SceneManager.LoadScene(GameSelectLogic.learnSceneName);
+    public void BackToPlay() => SceneManager.LoadScene("Play");
 
     public void ChangeStage(PlayStage changeTo) 
     {
@@ -123,6 +125,7 @@ public class Game9Logic : MonoBehaviour
         stage++;
         if (stage == 5)
         {
+            
             result.Show();
         }
         else

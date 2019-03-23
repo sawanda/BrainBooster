@@ -15,6 +15,7 @@ public class Result : MonoBehaviour
         this.gameObject.SetActive(true);
         Balloon.Play();
 
+    
         switch(game)
         {
             case 1:
@@ -23,14 +24,16 @@ public class Result : MonoBehaviour
             case 2:
                 GameSaveManager.ActiveSave.game6Score.RecordScore(ScoreAll.Score);
                 break;
+        
             case 3:
                 GameSaveManager.ActiveSave.game9Score.RecordScore(ScoreAll.Score);
+                Debug.Log(GameSaveManager.ActiveSave.game9Score);
                 break;
             case 4:
                 GameSaveManager.ActiveSave.game10Score.RecordScore(ScoreAll.Score);
                 break;
         }
-        Debug.Log(GameSaveManager.ActiveSave.game6Score);
+       // Debug.Log(GameSaveManager.ActiveSave.game6Score);
 
         GameSaveManager.SaveToDevice(GameSaveManager.ActiveSave);
     }

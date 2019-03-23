@@ -39,6 +39,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Game7.unity
     guid: 37cda14375b814eba8a812f93b35d423
   - enabled: 1
+    path: Assets/Scenes/Game9.unity
+    guid: c0854b6e476884de0a0e1f57cbb8a665
+  - enabled: 1
+    path: Assets/Scenes/Game9_number.unity
+    guid: f0e111c74e7d5482eadd20dfeec81cee
+  - enabled: 1
+    path: Assets/Scenes/Game10.unity
+    guid: 095b24afeb8e34384a2aff82184deccc
+  - enabled: 1
     path: Assets/Scenes/Stats.unity
     guid: ffdd4c00cd5a2469590ae07eec92bf44
   - enabled: 1

@@ -19,6 +19,8 @@ public class MixingBucket : MonoBehaviour
 
     public Game8Logic mixColor;
 
+    public bool mixColorgame;
+
     public void Drop()
     {
         if (mixedColor.Count < 2)
@@ -35,6 +37,7 @@ public class MixingBucket : MonoBehaviour
         number.text = "2";
         MixColor();
     }
+
 
     private void MixColor()
     {
@@ -89,7 +92,10 @@ public class MixingBucket : MonoBehaviour
                 audioSource.clip = soundOfColors[5];
                 audioSource.Play();
             }
-            mixColor.CheckColor(color1: mixedColor[0], color2: mixedColor[1]);
+            if(mixColorgame==true)
+            {
+                mixColor.CheckColor(color1: mixedColor[0], color2: mixedColor[1]);
+            }
         }
     }
 }

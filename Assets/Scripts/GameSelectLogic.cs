@@ -11,6 +11,11 @@ public class GameSelectLogic : MonoBehaviour
    public const string Game5SceneName = "Game5";
    public const string Game6SceneName = "Game6"; 
    public const string Game7SceneName = "Game7";
+   
+   public const string Game9SceneName = "Game9";
+   
+   public const string Game10SceneName = "Game10";
+   
    public const string GameSelectName = "GameSelect"; 
     public void BackToTitleScreen() => SceneManager.LoadScene(TitleScreen.titleSceneName);
     public void BackToGameSelectScreen() => SceneManager.LoadScene(GameSelectName);
@@ -21,4 +26,10 @@ public class GameSelectLogic : MonoBehaviour
     public void GoToGame5() => SceneManager.LoadScene(Game5SceneName);
     public void GoToGame6() => SceneManager.LoadScene(Game6SceneName);
     public void GoToGame7() => SceneManager.LoadScene(Game7SceneName);
+    
+    public void GoToGame9() => SceneManager.LoadScene(Game9SceneName);
+    
+    public void GoToGame10() => SceneManager.LoadScene(Game10SceneName);
+
+
 }
