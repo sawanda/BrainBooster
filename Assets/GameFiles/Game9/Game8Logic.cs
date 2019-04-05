@@ -32,6 +32,7 @@ public class Game8Logic : MonoBehaviour
     public Animation wrongAnimation;
     public Result result;
 
+    
     public void CheckColor(BucketColor color1, BucketColor color2)
     {
         ColorProblem mixedColor = MixBucketColor(color1, color2);

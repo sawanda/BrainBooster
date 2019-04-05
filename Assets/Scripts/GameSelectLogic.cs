@@ -4,7 +4,26 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameSelectLogic : MonoBehaviour
-{
+{   
+     public GameObject fullpack;
+     private string name;
+     public void Start() {
+
+        // PlayerPrefs.DeleteKey("role");
+
+        name = PlayerPrefs.GetString("ActiveLastTime");
+
+
+        fullpack.SetActive(false);
+        int role = PlayerPrefs.GetInt(name+"_role", 0);
+        if(role == 1){
+            status = true;
+        } else {
+            status = false;
+        }
+
+     }
+
     public const string learnSceneName = "Learn";
     public const string playSceneName = "Play";
     public const string statsSceneName = "Stats";
@@ -22,14 +41,57 @@ public class GameSelectLogic : MonoBehaviour
     public void GoToLearn() => SceneManager.LoadScene(learnSceneName);
     public void GoToPlay() => SceneManager.LoadScene(playSceneName);
 
-    public void GoToStats() => SceneManager.LoadScene(statsSceneName);
-    public void GoToGame5() => SceneManager.LoadScene(Game5SceneName);
-    public void GoToGame6() => SceneManager.LoadScene(Game6SceneName);
-    public void GoToGame7() => SceneManager.LoadScene(Game7SceneName);
-    
-    public void GoToGame9() => SceneManager.LoadScene(Game9SceneName);
-    
-    public void GoToGame10() => SceneManager.LoadScene(Game10SceneName);
+    private bool status = false;
 
+    public void GoToStats() {
+        if(!fullpack.activeSelf) {
+          SceneManager.LoadScene(statsSceneName);
+        }
+    } 
+    public void GoToGame5() {
+         if(status){
+          SceneManager.LoadScene(Game5SceneName);
+         } else {
+            fullpack.SetActive(true);
+         }
+
+    } 
+    public void GoToGame6() {
+        if(status){
+          SceneManager.LoadScene(Game6SceneName);
+         } else {
+            fullpack.SetActive(true);
+         }
+    } 
+    public void GoToGame9() { 
+        if(!fullpack.activeSelf) {
+            if(status){
+                 SceneManager.LoadScene(Game6SceneName);
+            } else {
+                fullpack.SetActive(true);
+            }
+        } else {
+           clickBuyButton();
+        }
+    }
+
+     public void GoToGame7(){ 
+         if(!fullpack.activeSelf) {
+            SceneManager.LoadScene(Game7SceneName);
+        }
+    }
+    
+    public void GoToGame10() {
+         if(!fullpack.activeSelf) {
+            SceneManager.LoadScene(Game10SceneName);
+        }
+
+    }
+
+     public void clickBuyButton() {
+        PlayerPrefs.SetInt(name+"_role", 1);
+        fullpack.SetActive(false);
+        status = true;
+    }
 
 }

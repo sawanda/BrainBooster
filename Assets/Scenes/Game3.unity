@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: textOnBase
       value: Xylophone
       objectReference: {fileID: 0}
+    - target: {fileID: 3923110909757043233, guid: 57d7db340899a41c4bdc472299965b62,
+        type: 3}
+      propertyPath: soundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59a7e1b9e96764b28b6516b6ccc5d0d0, type: 3}
     - target: {fileID: 3923110908792202326, guid: 57d7db340899a41c4bdc472299965b62,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -423,6 +428,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: d0e3fbeec35984871bf9cfa582462d10,
         type: 3}
+    - target: {fileID: 3923110909988492760, guid: 57d7db340899a41c4bdc472299965b62,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 59a7e1b9e96764b28b6516b6ccc5d0d0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
 --- !u!224 &43020604 stripped
@@ -2691,6 +2701,11 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: cf2a77099262a43b48b0f9549a045bc3, type: 2}
+    - target: {fileID: 187411302, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0e3fbeec35984871bf9cfa582462d10,
+        type: 3}
     - target: {fileID: 1382274087242198559, guid: 57d7db340899a41c4bdc472299965b62,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -2721,11 +2736,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 64d1a31cbe74e4a22b1cf1f77ef25e11,
-        type: 3}
-    - target: {fileID: 187411302, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d0e3fbeec35984871bf9cfa582462d10,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
@@ -4531,6 +4541,11 @@ PrefabInstance:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400000, guid: 92338c42ff29a45778c4351b17d8f55c, type: 2}
+    - target: {fileID: 187411302, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0e3fbeec35984871bf9cfa582462d10,
+        type: 3}
     - target: {fileID: 1382274087242198559, guid: 57d7db340899a41c4bdc472299965b62,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -4582,11 +4597,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 187411302, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d0e3fbeec35984871bf9cfa582462d10,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57d7db340899a41c4bdc472299965b62, type: 3}
 --- !u!224 &6266860478442417481 stripped

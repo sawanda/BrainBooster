@@ -26,6 +26,7 @@ public class NamingLogic : MonoBehaviour
     public Toggle toggleGirl;
     public TMP_InputField age;
     public GameObject warning;
+   
     
 
     const string namingScene = "Naming";
@@ -51,9 +52,16 @@ public class NamingLogic : MonoBehaviour
             warning.SetActive(true);
             return;
         }
-
+        string gender = toggleBoy.isOn ? "boy" : "girl";
+        print("Register");
+        UserService.register(namingBox.text,age.text,gender,"1234");
         RegisterNewPlayer(namingBox.text, ageInteger, toggleBoy.isOn ? GameSave.Sex.Boy : GameSave.Sex.Girl);
         GameSaveManager.SetNameAsActive(namingBox.text);
+        
+
+        PlayerPrefs.SetInt("role", 0);
+        // PlayerPrefs.DeleteKey("role");
+
 
         SceneManager.LoadScene(nextSceneRemember);
     }

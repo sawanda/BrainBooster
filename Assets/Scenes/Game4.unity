@@ -7705,6 +7705,31 @@ PrefabInstance:
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a6da1dcb21904dc0921f836e4dc3be7, type: 3}
+--- !u!1 &583922303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1770763433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &583922306
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583922303}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 03078a74bfdd04cfcbc9ed584284e451, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: 03078a74bfdd04cfcbc9ed584284e451, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!224 &588180373 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 889645880345997143, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
@@ -7741,6 +7766,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacec4d52f39b4278844bcf279b40c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &665971163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 7360811559680973625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &665971166
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665971163}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 04d070e595b274377ad399713d3f5934, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: 004b373680e6d418bbec08f49cac3ebb, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114704130582029744, guid: 04d070e595b274377ad399713d3f5934, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &690096688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9422,9 +9474,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
         type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 004b373680e6d418bbec08f49cac3ebb,
+        type: 2}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].key
+      value: 
+      objectReference: {fileID: 114704130582029744, guid: 004b373680e6d418bbec08f49cac3ebb,
+        type: 2}
     - target: {fileID: 2659565418719102139, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
         type: 3}
       propertyPath: m_audioClip
@@ -14364,6 +14433,33 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7360811559680973625}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1087593114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1791754005}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1087593117
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087593114}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 004b373680e6d418bbec08f49cac3ebb, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: 04d070e595b274377ad399713d3f5934, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 114704130582029744, guid: 004b373680e6d418bbec08f49cac3ebb, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &1094486677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14450,6 +14546,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacec4d52f39b4278844bcf279b40c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1149404095 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1740232141}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1149404098
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149404095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 04d070e595b274377ad399713d3f5934, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: 04d070e595b274377ad399713d3f5934, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1182853553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26049,6 +26170,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: -395
       objectReference: {fileID: 0}
+    - target: {fileID: 8364081996917232325, guid: 5e99e6af681384d5691d598408e5b225,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fe0e765682cf45eb93102d7161a9711, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e99e6af681384d5691d598408e5b225, type: 3}
 --- !u!224 &1229930629 stripped
@@ -26451,6 +26577,31 @@ PrefabInstance:
       objectReference: {fileID: 410090788}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42a59a4cdefcc4bc79d45db46247fae9, type: 3}
+--- !u!1 &1357725158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 2092814543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1357725161
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357725158}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: cc44df0d891d34f75aadcd89a64ad30d, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114528433514742826, guid: cc44df0d891d34f75aadcd89a64ad30d, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1359658089
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27625,6 +27776,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacec4d52f39b4278844bcf279b40c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1538166157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1449284337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1538166160
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538166157}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 77735a371e5b74ccfa29b11dec04dd31, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: 77735a371e5b74ccfa29b11dec04dd31, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!224 &1560637007 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 889645878701337229, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
@@ -28054,6 +28230,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dacec4d52f39b4278844bcf279b40c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1709283799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1359658089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1709283802
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709283799}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: da6dc9c420d9546b48c7976919773dd9, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114704130582029744, guid: da6dc9c420d9546b48c7976919773dd9, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1717744658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28464,6 +28665,31 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1359658089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1763461273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8364081995544278330, guid: 5e99e6af681384d5691d598408e5b225,
+    type: 3}
+  m_PrefabInstance: {fileID: 1229930628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!320 &1763461276
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763461273}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: cc44df0d891d34f75aadcd89a64ad30d, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114528433514742826, guid: cc44df0d891d34f75aadcd89a64ad30d, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1770763433
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28641,6 +28867,16 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8364081995720680267, guid: 5e99e6af681384d5691d598408e5b225,
+        type: 3}
+      propertyPath: m_text
+      value: "Star\n<size=-30>\u0E14\u0E32\u0E27</size>"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8364081995720680267, guid: 5e99e6af681384d5691d598408e5b225,
+        type: 3}
+      propertyPath: m_inputSource
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3622776148320576970, guid: 5e99e6af681384d5691d598408e5b225,
         type: 3}
       propertyPath: m_Enabled
@@ -28661,11 +28897,21 @@ PrefabInstance:
       propertyPath: m_Animations.Array.data[0]
       value: 
       objectReference: {fileID: 7400000, guid: e9e35f68864354b41b0def2885c7d304, type: 2}
+    - target: {fileID: 8364081995676266975, guid: 5e99e6af681384d5691d598408e5b225,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: e9e35f68864354b41b0def2885c7d304, type: 2}
     - target: {fileID: 8364081995544278332, guid: 5e99e6af681384d5691d598408e5b225,
         type: 3}
       propertyPath: soundClip
       value: 
       objectReference: {fileID: 8300000, guid: 60c089d8f9848493bb8b887533de9a7e, type: 3}
+    - target: {fileID: 8364081995544278332, guid: 5e99e6af681384d5691d598408e5b225,
+        type: 3}
+      propertyPath: textOnBase
+      value: "Star\n<size=-30>\u0E14\u0E32\u0E27</size>"
+      objectReference: {fileID: 0}
     - target: {fileID: 5858147520586410242, guid: 5e99e6af681384d5691d598408e5b225,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -42345,9 +42591,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
         type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
       propertyPath: m_SceneBindings.Array.data[0].value
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
+      propertyPath: m_PlayableAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 04d070e595b274377ad399713d3f5934,
+        type: 2}
+    - target: {fileID: 1935286902230344656, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
+        type: 3}
+      propertyPath: m_SceneBindings.Array.data[1].key
+      value: 
+      objectReference: {fileID: 114704130582029744, guid: 004b373680e6d418bbec08f49cac3ebb,
+        type: 2}
     - target: {fileID: 2659565418719102139, guid: 9a6da1dcb21904dc0921f836e4dc3be7,
         type: 3}
       propertyPath: m_audioClip

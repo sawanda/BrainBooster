@@ -7,6 +7,8 @@ public class Game6page : MonoBehaviour
     public int answer;
     public Game5Logic game5Logic;
     public bool WrongBefore;
+    public Animation correctAnimation;
+    public Animation wrongAnimation;
     public void Answer(Game5Choice Choice5){
        if(answer == Choice5.Answer)
         {
@@ -14,15 +16,18 @@ public class Game6page : MonoBehaviour
             if(!WrongBefore)
             {
                ScoreAll.Score++;
+               
             }
-
+        
             game5Logic.Forward();
+            
             
         }
         else
         {   
             WrongBefore = true; 
            // game5Logic.Forward();
+           
             Choice5.GetComponent<Animation>().Play();
         }
     }

@@ -1053,12 +1053,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6173486399455888702, guid: bc7d4329b44614fad847a2b26b405830,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 695a1a96c52b04dc9aabeb661e75da8a,
-        type: 3}
     - target: {fileID: 6173486399455888701, guid: bc7d4329b44614fad847a2b26b405830,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1089,6 +1083,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6173486399455888702, guid: bc7d4329b44614fad847a2b26b405830,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 695a1a96c52b04dc9aabeb661e75da8a,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc7d4329b44614fad847a2b26b405830, type: 3}
 --- !u!224 &825277849 stripped
@@ -1126,6 +1126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ce42f34fdf94931bfe08249c0dd788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fullpack: {fileID: 6832118025695621777, guid: fa020818fb74a44009c754f236c10929,
+    type: 3}
 --- !u!4 &882542618
 Transform:
   m_ObjectHideFlags: 0
@@ -1243,7 +1245,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1099499cbbdb944fdbc0a7111bc3f28d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0

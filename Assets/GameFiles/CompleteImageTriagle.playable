@@ -20,7 +20,7 @@ MonoBehaviour:
     m_Framerate: 60
   m_DurationMode: 0
   m_Version: 0
---- !u!114 &114034534968477310
+--- !u!114 &114526816492326704
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -32,7 +32,7 @@ MonoBehaviour:
   m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 538b3233786bf4c4caefde79bc2f58e1, type: 3}
+  m_Clip: {fileID: 8300000, guid: a15e01162a8fb48dcb4df39f7f56eb8d, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
 --- !u!114 &114704130582029744
@@ -56,7 +56,7 @@ MonoBehaviour:
   m_Clips:
   - m_Start: 0
     m_ClipIn: 0
-    m_Asset: {fileID: 114034534968477310}
+    m_Asset: {fileID: 114526816492326704}
     m_Duration: 1
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114704130582029744}
@@ -90,25 +90,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     m_MixOutCurve:
       serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
+      m_Curve: []
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -121,12 +103,12 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: trangle_02
+    m_DisplayName: circle_01
     m_Version: 1
   - m_Start: 1.5
     m_ClipIn: 0
-    m_Asset: {fileID: 114973039921045254}
-    m_Duration: 0.8333333333333335
+    m_Asset: {fileID: 114707116738551222}
+    m_Duration: 0.906625
     m_TimeScale: 1
     m_ParentTrack: {fileID: 114704130582029744}
     m_EaseInDuration: 0
@@ -135,7 +117,25 @@ MonoBehaviour:
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -172,10 +172,10 @@ MonoBehaviour:
     m_PreExtrapolationMode: 0
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
-    m_DisplayName: trangle_02
+    m_DisplayName: circle_01
     m_Version: 1
   m_Version: 2
---- !u!114 &114973039921045254
+--- !u!114 &114707116738551222
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,6 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
   m_Name: AudioPlayableAsset
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 538b3233786bf4c4caefde79bc2f58e1, type: 3}
+  m_Clip: {fileID: 8300000, guid: a15e01162a8fb48dcb4df39f7f56eb8d, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
